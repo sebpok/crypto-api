@@ -11,6 +11,8 @@ const GlobalStyle = createGlobalStyle`
   
   body {
     font-family: sans-serif;
+    background-color: ${({ theme }) => theme.colors.backgroundColor};
+    color: white;
   }
   
   :root {

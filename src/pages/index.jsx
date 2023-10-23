@@ -17,7 +17,6 @@ function IndexPage() {
     <ThemeProvider theme={theme}>
       <GlobalStyle />
       <Wrapper>
-
         <button type="button" onClick={() => setCounter(counter + 1)}>Click</button>
         <p>
           Liczba klikniec:
