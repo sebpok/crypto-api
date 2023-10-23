@@ -1,15 +1,20 @@
 import * as React from 'react';
 import { ThemeProvider } from 'styled-components';
+import { useState } from 'react';
 import theme from '../assets/theme';
 import GlobalStyle from '../assets/globalStyle';
-import Component from '../components/Component';
 
 function IndexPage() {
+  const [counter, setCounter] = useState(0);
+
   return (
     <ThemeProvider theme={theme}>
       <GlobalStyle />
-      <h1>template</h1>
-      <Component />
+      <button type="button" onClick={() => setCounter(counter + 1)}>Click</button>
+      <p>
+        Liczba klikniec:
+        {counter}
+      </p>
     </ThemeProvider>
   );
 }
