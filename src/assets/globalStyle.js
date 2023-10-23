@@ -8,6 +8,19 @@ const GlobalStyle = createGlobalStyle`
     padding: 0;
     box-sizing: border-box;
   }
+  
+  body {
+    font-family: sans-serif;
+  }
+  
+  :root {
+    font-size: 62.5%;
+  }
+  
+  p {
+    font-size: 1.6rem;
+    line-height: 1.5;
+  }
 `;
 
 export default GlobalStyle;
